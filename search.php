@@ -73,13 +73,21 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 <?php
+//Gets Input Date
 $search = $_POST["search"];
+//Security
+$search = stripslashes($search);
+//Heading
 echo '<h1 style="text-align: center;">'.$search."</h1>";
+//Replaces spaces for query
 $search = preg_replace('/\s+/', '%20', $search);
-$xml = file_get_contents("http://en.wikipedia.org/w/api.php?format=xml&action=query&prop=extracts&titles=".$search."&redirects=true&continue");
-$xml = strip_tags($xml);
-$xml = html_entity_decode($xml);
-echo $xml;
+//Gets data
+$content = file_get_contents("http://en.wikipedia.org/w/api.php?format=xml&action=query&prop=extracts&titles=".$search."&redirects=true&continue");
+//Formats data
+$content = strip_tags($content);
+$content = html_entity_decode($content);
+//Prints info
+echo $content;
 ?>
 <p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search</p>
 </div>
