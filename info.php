@@ -69,7 +69,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About This Site</h2>
-                <h4>Warning: Do Not Site</h4>
+                <h4>Warning: Do Not Cite</h4>
                 <p>This site should not be cited. All of the information that can be found on this website comes from <a href="https://wikipedia.org">Wikipedia</a>.</p>
             </div>
         </div>
