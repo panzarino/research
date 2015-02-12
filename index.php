@@ -42,7 +42,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">RE</span> SEARCH
+                    <i class="fa fa-play-circle"></i>  <span class="light">RE</span>SEARCH
                 </a>
             </div>
 
