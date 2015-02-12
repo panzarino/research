@@ -81,7 +81,7 @@ $xml = strip_tags($xml);
 $xml = html_entity_decode($xml);
 echo $xml;
 ?>
-<p>If No Information Is Found Try Another Search With Different Terms</p>
+<p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search</p>
 </div>
                 </div>
             </div>
