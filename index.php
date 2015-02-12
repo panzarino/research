@@ -68,11 +68,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Research</h1>
+                        <h1 class="brand-heading">Re<i><b>search</b></i></h1>
                         <p class="intro-text">Find information on any topic that you search</p>
                         <form class="form-inline" action="search.php" method="post">
   <div class="form-group">
-    <label for="search">I Need Info on:</label>
+    <label for="search">I Need Info On:</label>
     <input type="text" class="form-control" id="search" name="search" placeholder="Topic" required>
   </div>
   <button type="submit" class="btn btn-default">Search</button>
