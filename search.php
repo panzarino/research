@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="/img/icon.png">
 
     <title>Search Results</title>
 
@@ -68,11 +69,9 @@
         </div>
         <!-- /.container -->
     </nav>
-    <br><br><br><br><br><header>
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+        <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
 <?php
 $search = $_POST["search"];
 echo '<h1 style="text-align: center;">'.$search."</h1>";
@@ -81,13 +80,12 @@ $xml = file_get_contents("http://en.wikipedia.org/w/api.php?format=xml&action=qu
 $xml = strip_tags($xml);
 $xml = html_entity_decode($xml);
 echo $xml;
-//Makes the basic data but formatting comes next
 ?>
+<p>If No Information is Found<br>Try Another Search With Different Terms</p>
 </div>
                 </div>
             </div>
-        </div>
-    </header>
+</section>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
