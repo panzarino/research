@@ -358,6 +358,17 @@ img::-moz-selection {
     background: 0 0;
 }
 
+#foot{
+    background:#000000;
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    text-align: center;
+    width:100%;
+    font-size:20px;
+}
+
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }

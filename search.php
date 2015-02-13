@@ -112,9 +112,13 @@ echo $content;
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Zach Panzarino 2015<br>Warning: Do Not Cite</p>
+            <p>Copyright &copy; Zach Panzarino 2015</p>
         </div>
     </footer>
+    
+    <div class="container text-center" id="foot">
+            Warning: Do Not Cite
+        </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
