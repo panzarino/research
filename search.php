@@ -112,7 +112,7 @@ echo $content;
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Zach Panzarino 2015</p>
+            <p>Copyright &copy; Zach Panzarino 2015<br>Warning: Do Not Cite</p>
         </div>
     </footer>
 
