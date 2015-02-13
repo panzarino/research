@@ -83,6 +83,7 @@
                 <h2>About This Site</h2>
                 <h4>Warning: Do Not Cite</h4>
                 <p>This site should not be cited. All of the information that can be found on this website comes from <a href="https://wikipedia.org">Wikipedia</a>. I do not own any of this information.</p>
+                <p>This site was made as a quick project and should not be used as a legitimate source.</p>
             </div>
         </div>
     </section>
