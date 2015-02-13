@@ -91,7 +91,8 @@ $search = $_POST["search"];
 $search = stripslashes($search);
 //Heading
 echo '<h1 style="text-align: center;">'.$search."</h1>";
-//Replaces spaces for query
+//Formats input for query
+$search = ucfirst($search);
 $search = preg_replace('/\s+/', '%20', $search);
 //Gets data
 $content = file_get_contents("http://en.wikipedia.org/w/api.php?format=xml&action=query&prop=extracts&titles=".$search."&redirects=true&continue");
