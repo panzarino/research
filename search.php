@@ -20,9 +20,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/img/icon.png">
+    <link rel="icon" href="img/icon.png">
 
-    <title>Search Results</title>
+    <title>Research | Search Results</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
