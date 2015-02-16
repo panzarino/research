@@ -86,7 +86,7 @@
                         <form class="form-inline" action="search.php" method="post">
   <div class="form-group">
     <label for="search">I Need Info On:</label>
-    <input type="text" class="form-control" id="search" name="search" placeholder="Topic" required>
+    <input type="text" class="form-control" id="search" name="search" placeholder="Topic" autofocus="autofocus" required>
   </div>
   <button type="submit" class="btn btn-default">Search</button>
 </form>
