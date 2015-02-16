@@ -84,6 +84,7 @@
         <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
+                
 <?php
 //Gets Input Date
 $search = $_POST["search"];
@@ -104,15 +105,17 @@ $content = html_entity_decode($content);
 //Prints info
 echo $content;
 ?>
+
+<br>
 <p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search</p>
-</div>
+                    </div>
                 </div>
             </div>
 </section>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Zach Panzarino 2015</p>
+            <p>View the Source Code <a href="https://github.com/zachpanz88/research">Here</a><br><br>Copyright &copy; Zach Panzarino 2015</p>
         </div>
     </footer>
     
