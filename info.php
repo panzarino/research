@@ -22,7 +22,7 @@
     <meta name="author" content="">
     <link rel="icon" href="img/icon.png">
 
-    <title>Research | Information</title>
+    <title>Information | Research</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

@@ -14,7 +14,17 @@
      \|__|         \/__/         \/__/         \/__/         \/__/         \|__|         \/__/         \/__/                                                                                                       
 -->
 <head>
-
+<?php
+//Gets Input Date
+$search = $_POST["search"];
+//Security
+$search = stripslashes($search);
+//Formats for heading
+$search = strip_tags($search);
+//Uppercases Words
+$search = ucwords($search);
+echo "<title>".$search." | Research</title>";
+?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,16 +96,9 @@
             <div class="col-lg-8 col-lg-offset-2">
                 
 <?php
-//Gets Input Date
-$search = $_POST["search"];
-//Security
-$search = stripslashes($search);
-//Formats for heading
-$search = strip_tags($search);
 //Heading
 echo '<h1 style="text-align: center;">'.$search."</h1>";
 //Formats input for query
-$search = ucwords($search);
 $search = preg_replace('/\s+/', '%20', $search);
 //Gets data
 $content = file_get_contents("http://en.wikipedia.org/w/api.php?format=xml&action=query&prop=extracts&titles=".$search."&redirects=true&continue");
