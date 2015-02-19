@@ -83,7 +83,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Re<i><b>search</b></i></h1>
                         <p class="intro-text">Find Information On Any Topic That You Search</p>
-                        <form class="form-inline" action="search.php" method="post">
+                        <form class="form-inline" action="search.php" method="get">
   <div class="form-group">
     <label for="search">I Need Info On:</label>
     <input type="text" class="form-control" id="search" name="search" placeholder="Topic" autofocus="autofocus" required>

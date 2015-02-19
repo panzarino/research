@@ -16,7 +16,7 @@
 <head>
 <?php
 //Gets Input Date
-$search = $_POST["search"];
+$search = $_GET["search"];
 //Security
 $search = stripslashes($search);
 //Formats for heading
@@ -78,7 +78,7 @@ echo "<title>".$search." | Research</title>";
                         <a class="page-scroll" href="info.php">Info</a>
                     </li>
                     <li>
-                        <form class="form-inline" action="search.php" method="post">
+                        <form class="form-inline" action="search.php" method="get">
   <div class="form-group">
     <input type="text" class="form-control" id="search" name="search" placeholder="Topic" required>
   </div>
