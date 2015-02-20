@@ -113,7 +113,7 @@ echo $content;
 <p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search
 <br>Click 
 <?php
-echo '<a href="https://www.google.com/#q='.$search.'">';
+echo '<a href="https://www.google.com/#q='.$search.'" target="_blank">';
 ?>
 Here</a> to do a Google Search on the Topic</p>
                     </div>
