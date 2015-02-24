@@ -21,6 +21,7 @@ $search = $_GET["search"];
 $search = stripslashes($search);
 //Formats for heading
 $search = strip_tags($search);
+//Checks for curse
 $curse = file_get_contents("http://www.wdyl.com/profanity?q=".$search);
 if ($curse==='{"response": "true"}'){$search="inappropriate";}
 //Uppercases Words
@@ -104,21 +105,20 @@ echo '<h1 style="text-align: center;">'.$search."</h1>";
 //Formats input for query
 $search = preg_replace('/\s+/', '%20', $search);
 //Gets data
+if($search!="Inappropriate"){
 $content = file_get_contents("http://en.wikipedia.org/w/api.php?format=xml&action=query&prop=extracts&titles=".$search."&redirects=true&continue");
 //Formats data
 $content = strip_tags($content);
 $content = html_entity_decode($content);
 //Prints info
 echo $content;
-?>
-
-<br>
-<p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search
-<br>Click 
-<?php
+echo '<br>
+<p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search'
+echo '<br>Click ';
 echo '<a href="https://www.google.com/#q='.$search.'" target="_blank">';
+echo 'Here</a> to do a Google Search on the Topic</p>';
+}
 ?>
-Here</a> to do a Google Search on the Topic</p>
                     </div>
                 </div>
             </div>
