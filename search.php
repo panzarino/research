@@ -112,9 +112,9 @@ $content = strip_tags($content);
 $content = html_entity_decode($content);
 //Prints info
 echo $content;
-echo '<br>
-<p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search';
-echo '<br>Click ';
+if($content===""){
+echo '<br><p>No Information Is Found! <br> Try Another Search With Different Terms Or Broaden Your Search</p>';}
+echo '<p>Click ';
 echo '<a href="https://www.google.com/#q='.$search.'" target="_blank">';
 echo 'Here</a> to do a Google Search on the Topic</p>';
 }
@@ -126,7 +126,7 @@ echo 'Here</a> to do a Google Search on the Topic</p>';
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>View the Source Code <a href="https://github.com/zachpanz88/research">Here</a><br><br>Copyright &copy; Zach Panzarino 2015</p>
+            <p>View the Source Code <a href="https://github.com/zachpanz88/research">Here</a><br>Copyright &copy; Zach Panzarino 2015</p>
         </div>
     </footer>
     
