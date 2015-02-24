@@ -21,6 +21,8 @@ $search = $_GET["search"];
 $search = stripslashes($search);
 //Formats for heading
 $search = strip_tags($search);
+$curse = file_get_contents("http://www.wdyl.com/profanity?q=".$search);
+if ($curse==='{"response": "true"}'){$search="inappropriate";}
 //Uppercases Words
 $search = ucwords($search);
 echo "<title>".$search." | Research</title>";
