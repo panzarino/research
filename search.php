@@ -113,7 +113,7 @@ $content = html_entity_decode($content);
 //Prints info
 echo $content;
 echo '<br>
-<p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search'
+<p>If No Information Is Found Try Another Search With Different Terms Or Broaden Your Search';
 echo '<br>Click ';
 echo '<a href="https://www.google.com/#q='.$search.'" target="_blank">';
 echo 'Here</a> to do a Google Search on the Topic</p>';
