@@ -75,8 +75,9 @@ echo "<title>".$search." | Research</title>";
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="info.php">Info</a>
+                        <button class="btn btn-default" onclick="alert('Warning: Do Not Cite\n\nThis site should not be cited. All of the information that can be found on this website comes from Wikipedia. I do not own any of this information.')">Info</button>
                     </li>
+                    <li><a class="page-scroll"></a></li>
                     <li>
                         <form class="form-inline" action="search.php" method="get">
   <div class="form-group">
