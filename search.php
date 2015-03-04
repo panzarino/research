@@ -79,12 +79,20 @@ echo "<title>".$search." | Research</title>";
                     </li>
                     <li><a class="page-scroll"></a></li>
                     <li>
-                        <form class="form-inline" action="search.php" method="get">
+                        <form class="form-inline" action="search.php" method="get" onsubmit="return validateForm()" id="searchform">
   <div class="form-group">
-    <input type="text" class="form-control" id="search" name="search" placeholder="Topic" required>
+    <input type="text" class="form-control" id="search" name="search" placeholder="Topic">
   </div>
   <button type="submit" class="btn btn-default">Search</button>
 </form>
+<script>
+function validateForm() {
+    var x = document.forms["searchform"]["search"].value;
+    if (x == null || x == "") {
+        return false;
+    }
+}
+</script>
                     </li>
                 </ul>
             </div>

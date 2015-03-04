@@ -83,13 +83,21 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Re<i><b>search</b></i></h1>
                         <p class="intro-text">Find Information On Any Topic That You Search</p>
-                        <form class="form-inline" action="search.php" method="get">
+                        <form class="form-inline" action="search.php" method="get" onsubmit="return validateForm()" id="searchform">
   <div class="form-group">
     <label for="search">I Need Info On:</label>
-    <input type="text" class="form-control" id="search" name="search" placeholder="Topic" autofocus="autofocus" required>
+    <input type="text" class="form-control" id="search" name="search" placeholder="Topic" autofocus="autofocus">
   </div>
   <button type="submit" class="btn btn-default">Search</button>
 </form>
+<script>
+function validateForm() {
+    var x = document.forms["searchform"]["search"].value;
+    if (x == null || x == "") {
+        return false;
+    }
+}
+</script>
                     </div>
                 </div>
             </div>
