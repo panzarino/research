@@ -106,7 +106,7 @@ function validateForm() {
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>View the Source Code <a href="https://github.com/zachpanz88/research">Here</a><br>Copyright &copy; Zach Panzarino 2015</p>
+            <p>View the Source Code <a href="https://github.com/zachpanz88/research">Here</a></p>
         </div>
     </footer>
     
